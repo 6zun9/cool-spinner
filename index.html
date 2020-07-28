@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .arc {
+  border-radius: 50%;
+  border: 8px solid red;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  transform: translate(-50%,-50%);
+  animation: rotate 2s cubic-bezier(0.680, -0.550, 0.265, 1.550) infinite;
+}
+
+.small-1,.small {
+  width: 40px;
+  height: 40px;
+}
+
+.medium-1, .medium {
+  height: 80px;
+  width: 80px;
+}
+
+.large-1, .large {
+  height: 120px;
+  width: 120px;
+}
+
+.small-1 {
+   border-top-color: #bdc1d7;
+  animation-delay: 0.08s;
+}
+.medium-1 {
+   border-top-color: #bdc1d7;
+  animation-delay: 0.12s;
+}
+.large-1 {
+   border-top-color: #bdc1d7;
+  animation-delay: 0.14s;
+}
+
+
+@keyframes rotate {
+  0% {
+    
+  }
+  30% {
+    transform: translate(-50%,-50%)
+  }
+  100% {
+    transform: translate(-50%,-50%) rotate(360deg);
+  }
+}
+
+    </style>
+</head>
+<body>
+    <div class="arc small-1"></div>
+<div class="arc medium-1"></div>
+<div class="arc large-1"></div>
+<div class="arc small"></div>
+<div class="arc medium"></div>
+<div class="arc large"></div>
+</body>
+</html>
